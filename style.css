@@ -1,0 +1,480 @@
+/*--------------- 
+Josh Comeau Reset
+-----------------*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+
+html,
+body {
+  height: 100%;
+}
+
+/*
+  4. Improve text rendering
+  */
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Remove built-in form typography styles
+*/
+
+button {
+  font: inherit;
+}
+
+/*
+    6. Avoid text overflows
+  */
+
+p,
+h2,
+h3 {
+  overflow-wrap: break-word;
+}
+
+/*--------------- 
+Josh Comeau Reset 
+-----------------*/
+
+/*----------------- 
+Mobile first design 
+-------------------*/
+
+.component-container {
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+/*----------- 
+Common styles 
+-------------*/
+
+.component-container,
+.result-flex,
+.circle-container,
+.summary-flex,
+.summary-results {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-flex,
+.sum-col,
+.img-and-category {
+  display: flex;
+}
+
+.result-flex,
+.circle-container,
+.sum-col {
+  align-items: center;
+}
+
+.big-number,
+.bold-nr {
+  font-weight: 800;
+}
+
+.result-flex h2,
+.summary-flex h3 {
+  font-weight: 700;
+}
+
+.big-number,
+.result-flex h2,
+button {
+  color: white;
+}
+
+.summary-flex h3,
+.bold-nr {
+  color: #303b5a;
+}
+
+.summary-flex,
+.sum-col {
+  padding: 0 5%;
+}
+
+.sum-col,
+button {
+  height: 15%;
+}
+
+/*----------------------------------------------------
+Style for the little gray borders on the colored boxes 
+------------------------------------------------------*/
+
+.top-left-border,
+.bottom-left-border,
+.top-right-border,
+.bottom-right-border {
+  position: absolute;
+  height: 11px;
+  width: 11px;
+}
+
+.top-left-border,
+.top-right-border {
+  top: 0;
+  border-top: 1px solid hsla(224, 30%, 27%, 0.2);
+}
+
+.top-left-border,
+.bottom-left-border {
+  left: 0px;
+  border-left: 1px solid hsla(224, 30%, 27%, 0.2);
+}
+
+.bottom-left-border,
+.bottom-right-border {
+  bottom: 0px;
+  border-bottom: 1px solid hsla(224, 30%, 27%, 0.2);
+}
+
+.top-right-border,
+.bottom-right-border {
+  right: 0px;
+  border-right: 1px solid hsla(224, 30%, 27%, 0.2);
+}
+
+/*----------------------------------------------------
+Style for the little gray borders on the colored boxes 
+------------------------------------------------------*/
+
+/*----------- 
+Common styles 
+-------------*/
+
+/*---------------
+Purple box design 
+-----------------*/
+
+.result-flex {
+  background-image: linear-gradient(#7857ff, #2e2be9);
+  color: #c8c7ff;
+  flex-basis: 40%;
+  border-radius: 0 0 30px 30px;
+}
+
+.result-flex h3 {
+  padding: 3% 0;
+}
+
+.circle-container {
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.big-number {
+  font-size: 3.2rem;
+}
+
+.small-number {
+  margin-top: -5%;
+}
+
+.result-flex h2 {
+  margin-top: 3%;
+}
+
+.result-description {
+  width: 80%;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/*---------------
+Purple box design 
+-----------------*/
+
+/*--------------
+White box design 
+----------------*/
+
+.summary-flex {
+  flex-basis: 60%;
+}
+
+.title-flex {
+  flex-basis: 10%;
+}
+
+.summary-flex h3 {
+  height: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  align-self: flex-start;
+}
+
+.summary-results {
+  flex-basis: 90%;
+}
+
+.sum-col {
+  position: relative;
+  color: hsla(224, 30%, 27%, 0.5);
+  justify-content: space-between;
+  border-radius: 12px;
+  margin-bottom: 4%;
+}
+
+.res1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.res2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.res3 {
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.res4 {
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.cat1 {
+  color: #ff5757;
+}
+
+.cat2 {
+  color: #ffb01f;
+}
+
+.cat3 {
+  color: #00bd91;
+}
+
+.cat4 {
+  color: #1125d4;
+}
+
+/*----------------------------------------------------
+Style for the little gray borders on the colored boxes 
+------------------------------------------------------*/
+
+.top-left-border {
+  border-radius: 20px 0 0 0;
+}
+
+.bottom-left-border {
+  border-radius: 0 0 0 20px;
+}
+
+.top-right-border {
+  border-radius: 0 20px 0 0;
+}
+
+.bottom-right-border {
+  border-radius: 0 0 20px 0;
+}
+
+/*----------------------------------------------------
+Style for the little gray borders on the colored boxes 
+------------------------------------------------------*/
+
+.category {
+  margin-left: 15%;
+}
+
+button {
+  background-color: #303b5a;
+  width: 100%;
+  margin-top: 2%;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/*--------------
+White box design 
+----------------*/
+
+/*----------------- 
+Mobile first design 
+-------------------*/
+
+/*-------------------- 
+Smaller tablets design 
+--------------------*/
+
+@media (min-width: 576px) {
+  .component-container {
+    height: 450px;
+    width: 550px;
+    /* The code below is used to center this div perfectly */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+    /* The code above is used to center this div perfectly */
+    box-shadow: 6px 8px 20px 6px rgba(226, 226, 252, 0.4);
+  }
+
+  /*----------- 
+Common styles 
+-----------*/
+
+  .result-flex,
+  .summary-flex {
+    flex-basis: 50%;
+  }
+
+  .component-container,
+  .result-flex {
+    border-radius: 30px;
+  }
+
+  .result-flex h3,
+  .summary-flex h3 {
+    font-size: 1.5rem;
+  }
+
+  .result-flex h2,
+  button {
+    margin-top: 10%;
+  }
+
+  /*----------- 
+Common styles 
+-----------*/
+
+  /*---------------
+Purple box design 
+-----------------*/
+
+  .result-flex h3 {
+    padding: 10% 0;
+  }
+
+  .circle-container {
+    width: 170px;
+    height: 170px;
+  }
+
+  .big-number {
+    font-size: 3.8rem;
+  }
+
+  .small-number {
+    margin-top: -7%;
+  }
+
+  .result-flex h2 {
+    font-size: 2rem;
+    margin-bottom: 2%;
+  }
+
+  /*---------------
+Purple box design 
+-----------------*/
+
+  /*--------------
+White box design 
+----------------*/
+
+  .summary-flex {
+    border-radius: 0 30px 30px 0;
+  }
+
+  .summary-flex h3 {
+    margin-top: 12%;
+    margin-bottom: 8%;
+  }
+
+  .summary-results {
+    margin-top: 5.5%;
+  }
+
+  .sum-col {
+    height: 13.5%;
+    margin-bottom: 6%;
+  }
+
+  button {
+    height: 13%;
+  }
+
+  /*--------------
+White box design 
+----------------*/
+}
+
+/*-------------------- 
+Smaller tablets design 
+----------------------*/
+
+/*------------------------------- 
+Larger tablets and desktop design 
+---------------------------------*/
+
+@media (min-width: 768px) {
+  .component-container {
+    height: 500px;
+    width: 700px;
+  }
+
+  .circle-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .big-number {
+    font-size: 4.2rem;
+  }
+
+  .result-flex h2 {
+    margin-top: 8%;
+    margin-bottom: 4%;
+  }
+
+  .result-description {
+    margin-top: -2%;
+  }
+
+  button {
+    margin-top: 5.5%;
+  }
+
+  button:hover {
+    background-image: linear-gradient(#7857ff, #2e2be9);
+  }
+}
+
+/*------------------------------- 
+Larger tablets and desktop design 
+---------------------------------*/
