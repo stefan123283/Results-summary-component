@@ -51,8 +51,8 @@ button {
   */
 
 p,
-h2,
-h3 {
+h1,
+h2 {
   overflow-wrap: break-word;
 }
 
@@ -95,23 +95,28 @@ Common styles
   align-items: center;
 }
 
+.result-flex h2,
+.summary-flex h2 {
+  font-size: 1.3rem;
+}
+
 .big-number,
 .bold-nr {
   font-weight: 800;
 }
 
-.result-flex h2,
-.summary-flex h3 {
+.result-flex h1,
+.summary-flex h2 {
   font-weight: 700;
 }
 
 .big-number,
-.result-flex h2,
+.result-flex h1,
 button {
   color: white;
 }
 
-.summary-flex h3,
+.summary-flex h2,
 .bold-nr {
   color: #303b5a;
 }
@@ -182,7 +187,7 @@ Purple box design
   border-radius: 0 0 30px 30px;
 }
 
-.result-flex h3 {
+.result-flex h2 {
   padding: 3% 0;
 }
 
@@ -205,7 +210,8 @@ Purple box design
   margin-top: -5%;
 }
 
-.result-flex h2 {
+.result-flex h1 {
+  font-size: 1.7rem;
   margin-top: 3%;
 }
 
@@ -231,7 +237,7 @@ White box design
   flex-basis: 10%;
 }
 
-.summary-flex h3 {
+.summary-flex h2 {
   height: 10%;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -359,12 +365,12 @@ Common styles
     border-radius: 30px;
   }
 
-  .result-flex h3,
-  .summary-flex h3 {
+  .result-flex h2,
+  .summary-flex h2 {
     font-size: 1.5rem;
   }
 
-  .result-flex h2,
+  .result-flex h1,
   button {
     margin-top: 10%;
   }
@@ -377,7 +383,7 @@ Common styles
 Purple box design 
 -----------------*/
 
-  .result-flex h3 {
+  .result-flex h2 {
     padding: 10% 0;
   }
 
@@ -394,7 +400,7 @@ Purple box design
     margin-top: -7%;
   }
 
-  .result-flex h2 {
+  .result-flex h1 {
     font-size: 2rem;
     margin-bottom: 2%;
   }
@@ -411,7 +417,7 @@ White box design
     border-radius: 0 30px 30px 0;
   }
 
-  .summary-flex h3 {
+  .summary-flex h2 {
     margin-top: 12%;
     margin-bottom: 8%;
   }
@@ -457,7 +463,7 @@ Larger tablets and desktop design
     font-size: 4.2rem;
   }
 
-  .result-flex h2 {
+  .result-flex h1 {
     margin-top: 8%;
     margin-bottom: 4%;
   }
